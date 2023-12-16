@@ -14,5 +14,12 @@ errores = {
 
 #print(errores['error'])
 
-prueba = 'daniel'
-print(prueba.upper())
+prueba = 'hdh'
+#print(prueba.upper())
+#print(prueba.isalpha())#True
+
+numero = 2046.4276214444258
+print(type(numero))
+valor = '{:,.2f}€'.format(numero)
+print(type(valor))
+print (valor)
