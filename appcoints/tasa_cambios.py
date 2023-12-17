@@ -1,5 +1,5 @@
 import requests
-from utils import config
+from appcoints import config
 
 moneda_cripto = input('Ingrese una criptomoneda conocida: ').upper()
 

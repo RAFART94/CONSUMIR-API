@@ -1,5 +1,5 @@
 import requests
-from utils import config
+from appcoints import config
 
 #consulta de todas las monedas
 
