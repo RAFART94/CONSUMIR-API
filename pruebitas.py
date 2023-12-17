@@ -17,9 +17,21 @@ errores = {
 prueba = 'hdh'
 #print(prueba.upper())
 #print(prueba.isalpha())#True
-
+'''
 numero = 2046.4276214444258
 print(type(numero))
 valor = '{:,.2f}€'.format(numero)
 print(type(valor))
 print (valor)
+'''
+
+lista = ['EXFC', 'SPACEID']
+
+dato = 'EXFC'
+
+for item in lista:
+    if item == dato:
+        print('Se encuentra')
+
+if dato in lista:
+    print('SE ENCUENTRA')

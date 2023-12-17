@@ -16,17 +16,9 @@ while moneda_cripto != '' and moneda_cripto.isalpha():
 
     if r.status_code == 200:
         #print('rate:', respuesta['rate']) #2046.4276214444258 cambie a 2046.43€
-        print('{:.2f}€'.format(respuesta['rate']))
+        print('{:.2f}€'.format(respuesta['rate'])) #2046.43€
         break
     else:
         print('error:', respuesta['error'])
 
     moneda_cripto = input('Ingrese una criptomoneda conocida: ').upper()
-
-'''
-print('Código http de repuesta:', r.status_code)
-print('Cabecera:' , r.headers['content-type'])
-print('Encoding:', r.encoding)
-print('Respuesta en estring', r.text)
-print('Respuesta enjson:', r.json())
-'''
