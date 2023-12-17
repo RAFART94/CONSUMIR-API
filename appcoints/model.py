@@ -26,7 +26,6 @@ class AllCoinsApiIO():
 
 class Exchange():
     def __init__(self, cripto):
-        self.url = ''
         self.rate = None
         self.moneda_cripto = cripto
         self.status_code = None
