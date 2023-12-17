@@ -8,6 +8,7 @@ class AllCoinsApiIO():
         self.url = ''
         self.lista_criptos = []
         self.lista_no_criptos = []
+        self.lista_general = []
         
     def getAllCoins(self, apikey):
         url = f'https://rest.coinapi.io/v1/assets/?apikey={apikey}'
@@ -15,9 +16,9 @@ class AllCoinsApiIO():
         if r.status_code != 200:
             raise Exception('Error en consulta condigo:{}'.format(r.status_code))
         
-        lista_general = r.json()
+        self.lista_general = r.json()
 
-        for dic in lista_general:
+        for dic in self.lista_general:
             if dic["type_is_crypto"] == 1:
                 self.lista_criptos.append(dic["asset_id"])
             else:
