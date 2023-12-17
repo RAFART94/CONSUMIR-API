@@ -1,5 +1,5 @@
 import requests
-from .utils import *
+from utils import *
 
 #consulta de todas las monedas
 
