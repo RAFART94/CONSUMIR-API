@@ -10,10 +10,13 @@ if r.status_code != 200:
 
 lista_general = r.json()
 lista_criptos = []
+lista_no_criptos = []
 
 for dic in lista_general:
     if dic[ "type_is_crypto"] == 1:
         lista_criptos.append(dic["asset_id"])
+    else:
+        lista_no_criptos.append(dic['asset_id'])
 
 print('Total: ',len(lista_general))
 print('Criptos: ', len(lista_criptos))

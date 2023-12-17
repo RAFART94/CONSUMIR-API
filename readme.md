@@ -1,9 +1,9 @@
-## Aplicación de consulta de valor actual de criptomonedas
+# Aplicación de consulta de valor actual de criptomonedas
 
 Programa hecho en python para recuperar el valor en euros de una criptomoneda
 desde www.coinapi.io
 
-# Instalación
+## Instalación
 -Obtener una API key en www.coinapi.io
 -Renombrar el fichero config_template.py a config.py
 -Agregar dentro de aconfig.py el API key de esta manera:
@@ -27,3 +27,5 @@ mac o linux - source entorno/bin/activate
 
 pip install -r requirements.txt
 ```
+
+-Utiliza las librerias de pytest y requests
