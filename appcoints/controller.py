@@ -15,11 +15,11 @@ class AppCoinsController():
         moneda_cripto = viewTools.insertCoin()
 
         while moneda_cripto != '' and moneda_cripto.isalpha():
-            if moneda_cripto in allcoins.lista_criptos:
+            if moneda_cripto in allcoins.lista_no_criptos:
                 exchange = Exchange(moneda_cripto)
                 try:
-                    exchange.updateExchange(APIKEY)
-                    viewTools.viewRateExchange(exchange)
+                    exchange.updateExchange2(APIKEY)
+                    viewTools.viewRateExchange2(exchange)
                 except ModelError as error:
                     viewTools.getError(error)
 
